@@ -1,0 +1,6 @@
+@import "../sprite";
+/*---　sprite ---*/
+i {
+  @include sprite($sprite-sprite5);
+  display: block;
+}

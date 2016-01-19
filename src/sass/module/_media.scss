@@ -1,0 +1,16 @@
+/*---　media ---*/
+.media {
+	&_text {
+		padding-top: 30px;
+		h1 {
+			font-family: $mincho;
+			margin: 0 0 20px;
+		}
+		p {
+			font-size: 12px;
+			margin-bottom: 0;
+		}
+
+
+	}
+}

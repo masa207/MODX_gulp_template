@@ -1,0 +1,80 @@
+@import "base/default/_mixin.scss";
+@import "_rule.scss";
+/*===　sp_utill ===*/
+@for $i from 0 through 14 {
+	.sp_mt#{$i * 5} { margin-top: 5px * $i !important; }
+	.sp_mr#{$i * 5} { margin-right: 5px * $i !important; }
+	.sp_mb#{$i * 5} { margin-bottom: 5px * $i !important; }
+	.sp_ml#{$i * 5} { margin-left: 5px * $i !important; }
+	.sp_pt#{$i * 5} { padding-top: 5px * $i !important; }
+	.sp_pr#{$i * 5} { padding-right: 5px * $i !important; }
+	.sp_pb#{$i * 5} { padding-bottom: 5px * $i !important; }
+	.sp_pl#{$i * 5} { padding-left: 5px * $i !important; }
+}
+
+/*===　基本設定 ===*/
+.pconly {
+	display: none !important;
+}
+main {
+	padding-bottom: (40/2)+px;
+}
+p {
+
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+main p,main ul,main dl,main h1,main h2,main h3,main h4,.news_list {
+	padding: $spPadding;
+}
+
+
+
+
+/*===　flame ===*/
+.contentW, .cover_wrapper .news, .l-header .l-header_inner, .l-footer .l-footer_inner, .l-footer_bottom .l-footer_bottom_inner,.content_inner .content_innerW {
+	width: auto;
+}
+.content_innerW {
+	width: auto;
+}
+// flame_width
+// header
+// footer
+
+
+
+
+/*===　container ===*/
+// btn
+.btn {
+
+}
+// table
+.table {
+
+}
+.table th,
+.table td {
+
+}
+.table th {
+
+}
+// heading
+.heading1 {
+
+}
+.heading2 {
+
+}
+.heading3 {
+
+}
+
+// gotop
+.gotop  {
+
+}

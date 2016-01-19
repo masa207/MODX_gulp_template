@@ -1,0 +1,49 @@
+//　/*===================================
+//　　　　　見出し1
+//　===================================*/
+
+//　/*===　見出し2　===*/
+
+//　/*---　見出し3　---*/
+
+// フレーム画像　ディレクトリ
+$template_img:'/assets/templates/v1';
+// 使用例（background: url(#{$template_img}/title_bg.jpg) ）
+
+// コンテンツ画像　ディレクトリ
+$content_img:'/content/images';
+// 使用例（background: url(#{$template_img}/title_bg.jpg) ）
+
+// テキストカラー
+$textColor: #484848;
+// 使用例（color: $textColor; ）
+
+// サイトカラー
+$siteColor: #F9609D;
+// 使用例（background-color: $siteColor; ）
+
+// アクセントカラー
+$accentColor: #FFE6EF;
+// 使用例（background-color: $accentColor; ）
+
+// リンクカラー
+$linkColor: #036EB8;
+// 使用例（color: $linkColor; ）
+
+// スマホ余白
+$spPadding: 0 15px;
+// 使用例（padding: $spPadding; ）
+
+//font(明朝体)
+$mincho: "ヒラギノ明朝 ProN W3", "HiraMinProN-W3", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+// 使用例（font-family: $mincho; ）
+
+$mincho2: "ヒラギノ明朝 ProN W6", "HiraMinProN-W6", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+// 使用例（font-family: $mincho2; ）
+
+//font(ゴシック体)
+$gothic: 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','小塚ゴシック Pro R','KozGoStd-Light', 'KozGoStd-Regular', 'メイリオ',Meiryo, 'ＭＳ Ｐゴシック',sans-serif;
+// 使用例（font-family: $gothic; ）
+
+$gothic2: 'ヒラギノ角ゴ Pro W6','Hiragino Kaku Gothic Pro','小塚ゴシック Pro R','KozGoStd-Light', 'KozGoStd-Regular', 'メイリオ',Meiryo, 'ＭＳ Ｐゴシック',sans-serif;
+// 使用例（font-family: $gothic2; ）

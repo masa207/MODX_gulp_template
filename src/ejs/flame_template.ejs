@@ -1,0 +1,32 @@
+<!--@MODX:
+	{{head}}
+-->
+<!--@IGNORE:BEGIN-->
+	<% include common/_head %>
+<!--@IGNORE:END-->
+
+<body>
+<!--@MODX:
+	{{header}}
+-->
+<!--@IGNORE:BEGIN-->
+	<% include common/_header %>
+<!--@IGNORE:END-->
+
+<!-- start contents -->
+	<main>
+		<h1 class="heading1">見出し</h1>
+			<!--@MODX:
+				[*content*]
+				-->
+				<!--@IGNORE:BEGIN-->
+				<% include index %>
+				<!--@IGNORE:END-->
+			</main>
+<!-- end contents -->
+<!--@MODX:
+	{{footer}}
+-->
+<!--@IGNORE:BEGIN-->
+	<% include common/_footer %>
+<!--@IGNORE:END-->

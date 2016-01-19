@@ -1,0 +1,41 @@
+/*---　heading ---*/
+%font_bold {
+	font-family: $gothic2;
+}
+.heading1 {
+	@include ht(160);
+	@extend %font_bold;
+	font-size: 25px;
+	color: $siteColor;
+	background-color: $accentColor;
+	text-align: center;
+}
+.heading2 {
+	font-size: 17px;
+	@extend %font_bold;
+	padding: 9px 10px;
+	color: #FFF;
+	background: $siteColor;
+	margin-bottom: 20px;
+	position: relative;
+	&:before {
+		content: '';
+		display: block;
+		width: 13px;
+		height: 40px;
+		background: url(#{$template_img}/bg_shard_heading.png) no-repeat 0;
+		position: absolute;
+		top: 0;
+		right: -13px;
+	}
+}
+.heading3 {
+	@extend %font_bold;
+	font-size: 17px;
+	color: $siteColor;
+	margin-bottom: 15px;
+}
+
+
+
+

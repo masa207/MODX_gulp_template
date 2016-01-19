@@ -1,0 +1,74 @@
+﻿@import "../_rule.scss";
+/*---　table ---*/
+.table {
+	margin: 0 0 50px;
+}
+.table th,
+.table td {
+	border: 1px solid #ddd;
+	padding: 8px 10px;
+}
+.table th {
+	background-color: $accentColor;
+	color: $siteColor;
+	text-align: left;
+}
+
+/*---　要素の配置 ---*/
+.center {
+	text-align: center;
+	margin: 0 auto;
+}
+.left {
+	float: left;
+	margin-right: 30px;
+}
+.right {
+	float: right;
+	margin-left: 30px;
+}
+
+/*---　画像キャプション ---*/
+.caption {
+	display: table;
+	width: 1%;
+	& span {
+		display: block;
+		margin-top: 10px;
+		margin-bottom: 30px;
+		font-size: 12px;
+		line-height: 1.3em;
+		padding: 0;
+		text-align: center;
+	}
+}
+
+/*---　floatLeft+crearfix ---*/
+.flLeft {
+	min-height: 1px;
+	/* margin: 15px 0; */
+	li {
+		list-style:none
+	}
+}
+.flLeft > li,
+.flLeft > div{
+	float:left;
+	margin-left: 10px;
+}
+.flLeft > li:first-child,
+.flLeft > div:first-child {
+	margin-left: 0;
+}
+.flLeft:after {
+	content:".";
+	display:block;
+	clear:both;
+	height:0;
+	visibility:hidden
+}
+* html .flLeft{
+	height:1px;
+	height:auto;
+	overflow:hidden
+}

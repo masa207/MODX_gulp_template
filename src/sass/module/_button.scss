@@ -1,0 +1,125 @@
+@import "../_rule.scss";
+/*--- btn ---*/
+.btn {
+	display: inline-block;
+	line-height: 1.5;
+	border: 2px solid $siteColor;
+	text-decoration: none;
+	font-size: 20px;
+	letter-spacing: 1px;
+	color: $textColor;
+	padding-left: 3%;
+	background: url(#{$template_img}/btn_arrow_off.png) no-repeat 92%;
+	@extend %transition_color;
+	&:hover {
+		background: $siteColor url(#{$template_img}/btn_arrow_on.png) no-repeat 92%;
+		color: #FFF;
+	}
+	&-S {
+		width: 340px;
+		@include ht(100);
+		font-size: 17px;
+
+	}
+	&-M {
+		width: 450px;
+		@include ht(100);
+		font-size: 17px;
+
+	}
+	a {
+		display: block;
+		color: $textColor;
+		font-family: $gothic;
+		text-decoration: none;
+		&:hover {
+			color: #FFF;
+		}
+	}
+
+	//size
+	&.small {
+
+	}
+	&.large {
+
+	}
+
+	//radius
+	&.square{
+		border-radius: 0;
+	}
+	&.circle{
+		border-radius: 10px;
+	}
+}
+.btn_pdf a {
+	display: block;
+	background: url(../../assets/templates/v1/ico_pdf.png) no-repeat 30px;
+	padding: 20px 30px 20px 90px;
+}
+//type
+.btn-primary {
+	background: url(../../assets/templates/v1/bg_btn.png) repeat 0;
+	color: #fff;
+	a {
+		display: block;
+		background: url(../../assets/templates/v1/ico_btn.png) no-repeat 7%;
+		padding: 25px 70px 25px 80px;
+		text-decoration: none;
+		&:hover {
+			@extend %opacity;
+		}
+	}
+}
+
+.btn_media {
+	width: 700px;
+	padding-left: 0;
+	margin-bottom: 15px;
+	.btn_img {
+		width: 299px;
+		height: 146px;
+		border-radius: 0px 12px 12px 0px / 0px 75px 75px 0px;
+		overflow: hidden;
+		float: left;
+		img {
+			max-width: none;
+			height: 100%;
+		}
+	}
+	.btn_right {
+		width: 360px;
+		@include ht(146);
+		float: right;
+		font-size: 29px;
+	}
+}
+.btn_page_link {
+	li {
+		@include ht(50);
+		border: 2px solid $siteColor;
+		margin-bottom: -2px;
+		margin-left: -2px;
+		color: $siteColor;
+		font-family: $gothic2;
+		@extend %transition_color;
+		background: url(#{$template_img}/ico_accordion_off.png) no-repeat 94%;
+		a {
+			display: block;
+			text-decoration: none;
+			color: $siteColor;
+			font-size: 14px;
+			padding-right: 40px;
+			padding-left: 15px;
+			&:hover {
+				color: #FFF;
+			}
+		}
+		&:hover {
+			cursor: pointer;
+			color: #FFF;
+			background: $siteColor url(#{$template_img}/ico_accordion_on.png) no-repeat 94%;
+		}
+	}
+}

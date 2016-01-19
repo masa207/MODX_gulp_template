@@ -1,0 +1,105 @@
+//透明度
+@mixin opacity($opacity) {
+	opacity: $opacity;
+	$opacityIE: $opacity * 100;
+	filter: alpha(opacity=$opacityIE);
+}
+
+//@include opacity(0.5);
+
+
+//position: absoluteのposition指定
+@mixin paposition ($top: auto, $right: auto,$bottom: auto, $left: auto) {
+	position: absolute;
+	top: $top;
+	right: $right;
+	bottom: $bottom;
+	left: $left;
+}
+
+//@include absPosition(5px, 20px, 10px, 15px);
+
+
+//rem IE8対応
+@mixin fontsize($size: 24, $base: 16) {
+	font-size: $size + px;
+	font-size: ($size / $base) * 1rem;
+}
+
+//@include fontsize(12);
+
+
+//retina対応
+@mixin imgRetina($image, $extension, $width, $height) {
+     background: url($image + '.' + $extension) no-repeat;
+     width: $width;
+     height: $height;
+
+     @media (min--moz-device-pixel-ratio: 1.3),
+           (-o-min-device-pixel-ratio: 2.6/2),
+           (-webkit-min-device-pixel-ratio: 1.3),
+           (min-device-pixel-ratio: 1.3),
+           (min-resolution: 1.3dppx) {
+                background-image: url($image + '-2x' + '.' + $extension) no-repeat;
+                background-size: $width $height;
+     }
+}
+
+//heightとline-heightの値を同じにする指定
+@mixin ht($ht) {
+	height: $ht + px;
+	line-height: $ht + px;
+}
+//@include ht(15);
+
+
+//heightとline-heightの値を同じにする指定
+@mixin radius($size) {
+	@include border-radius($size + px);
+}
+
+//@include radius(10);
+
+
+//正円
+@mixin circle($size){
+	width: $size + px;
+	height: $size + px;
+	@include border-radius(100%);
+}
+
+//@include circle(50);
+
+
+//矢印
+@mixin arrow($direction: right, $size: 10, $color: $black){
+    $set: left;
+
+    @if $direction == left{
+        $set: right;
+    }@elseif $direction == top{
+        $set: bottom;
+    }@elseif $direction == bottom{
+        $set: top;
+    }@else{
+        $set: left;
+    }
+    $size: round($size / 2);
+
+    width: 0;
+    height: 0;
+    border: $size + px solid transparent;
+    border-#{$set}-color: $color;
+}
+
+//@include arrow(right,20,#333);
+
+//@include imgRetina(imgFileName, png, 100px, 40px);
+
+//準備するファイル
+//imgFileName.png
+//imgFileName-2x.png
+
+
+
+

@@ -1,0 +1,299 @@
+﻿//   ------------------------------------------- caption -------------------------------------------------------------
+/*
+#styleguide
+
+caption
+```
+<div class="caption">
+	<img src="https://placeholdit.imgix.net/~text?txtsize=92&txt=350%C3%97200&w=350&h=200">
+	<span>.caption span</span>
+</div>
+
+```
+*/
+
+//   ------------------------------------------- center -------------------------------------------------------------
+/*
+#styleguide
+
+center
+```
+<p class="center">.center</p>
+
+<div class="center">
+	<img src="https://placeholdit.imgix.net/~text?txtsize=92&txt=350%C3%97200&w=350&h=200">
+</div>
+
+```
+*/
+
+//   ------------------------------------------- float-left -------------------------------------------------------------
+/*
+#styleguide
+
+float-left
+```
+<div class="clearfix">
+	<div class="left"><img src="https://placeholdit.imgix.net/~text?txtsize=92&txt=350%C3%97200&w=350&h=200"></div>
+	<p>text</p>
+</div>
+
+```
+*/
+
+//   ------------------------------------------- float-right -------------------------------------------------------------
+
+/*
+#styleguide
+
+float-right
+```
+<div class="clearfix">
+	<div class="right"><img src="https://placeholdit.imgix.net/~text?txtsize=92&txt=350%C3%97200&w=350&h=200"></div>
+	<p>text</p>
+</div>
+
+```
+*/
+
+//   ------------------------------------------- 要素内float + clearfix -------------------------------------------------------------
+
+/*
+#styleguide
+
+要素内float + clearfix
+```
+<ul class="flLeft">
+	<li>.flLeft li</li>
+	<li>.flLeft li</li>
+	<li>.flLeft li</li>
+</ul>
+<div class="flLeft">
+	<div>.flLeft div</div>
+	<div>.flLeft div</div>
+	<div>.flLeft div</div>
+</div>
+
+
+```
+*/
+
+//   ------------------------------------------- link -------------------------------------------------------------
+
+/*
+#styleguide
+
+link
+```
+<p><a href="" class="btn_link">.btn_link</a></p>
+<p><a href="" class="link">.link</a></p>
+<p><a href="" class="pdf">.pdf</a></p>
+
+
+```
+*/
+
+//   ------------------------------------------- heading -------------------------------------------------------------
+
+/*
+#styleguide
+
+heading
+```
+<h1 class="heading1">.heading1</h1>
+<h2 class="heading2">.heading2</h2>
+<h3 class="heading3">.heading3</h3>
+<h4 class="heading4">.heading4</h4>
+```
+*/
+
+//   ------------------------------------------- btn -------------------------------------------------------------
+
+/*
+#styleguide
+
+btn
+```
+<a href="#" class="btn btn-primary">.btn .btn-primary</a>
+<a href="#" class="btn btn-error">.btn .btn-error</a>
+<a href="#" class="btn btn-warning">.btn .btn-warning</a>
+```
+*/
+
+/*
+#styleguide
+
+size
+```
+<a href="#" class="btn btn-primary small">.btn .btn-primary .small</a>
+<a href="#" class="btn btn-primary">.btn .btn-primary"</a>
+<a href="#" class="btn btn-primary large">.btn .btn-primary .large</a>
+```
+*/
+
+/*
+#styleguide
+
+radius
+```
+<a href="#" class="btn btn-primary square">.btn .btn-primary .square</a>
+<a href="#" class="btn btn-primary circle">.btn .btn-primary .circle</a>
+```
+*/
+
+//   ------------------------------------------- list -------------------------------------------------------------
+
+/*
+#styleguide
+
+list-disc
+```
+<ul class="list-disc">
+	<li>.list-disc li</li>
+	<li>.list-disc li</li>
+	<li>.list-disc li</li>
+</ul>
+```
+*/
+
+/*
+#styleguide
+
+list-circle
+```
+<ul class="list-circle">
+	<li>.list-circle li</li>
+	<li>.list-circle li</li>
+	<li>.list-circle li</li>
+</ul>
+```
+*/
+
+/*
+#styleguide
+
+list-number
+```
+<ul class="list-number">
+	<li>.list-number li</li>
+	<li>.list-number li</li>
+	<li>.list-number li</li>
+</ul>
+```
+*/
+
+//   ------------------------------------------- media -------------------------------------------------------------
+
+/*
+#styleguide
+
+media
+```
+
+
+
+```
+*/
+
+//   ------------------------------------------- other -------------------------------------------------------------
+
+/*
+#styleguide
+
+teble
+```
+<table class="table">
+	<thead>
+		<tr>
+			<th>table</th>
+			<th>table</th>
+			<th>table</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th>table</th>
+			<td>table</td>
+			<td>table</td>
+		</tr>
+		<tr>
+			<th>table</th>
+			<td>table</td>
+			<td>table</td>
+		</tr>
+		<tr>
+			<th>table</th>
+			<td>table</td>
+			<td>table</td>
+		</tr>
+	</tbody>
+</table>
+
+
+```
+*/
+
+/*
+#styleguide
+
+teble
+```
+<table class="table table_stripe">
+	<thead>
+		<tr>
+			<th>table_stripe</th>
+			<th>table_stripe</th>
+			<th>table_stripe</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th>table_stripe</th>
+			<td>table_stripe</td>
+			<td>table_stripe</td>
+		</tr>
+		<tr>
+			<th>table_stripe</th>
+			<td>table_stripe</td>
+			<td>table_stripe</td>
+		</tr>
+		<tr>
+			<th>table_stripe</th>
+			<td>table_stripe</td>
+			<td>table_stripe</td>
+		</tr>
+	</tbody>
+</table>
+
+
+```
+*/
+
+/*
+#styleguide
+
+paginate
+```
+<p class="paginateNav"> <span class="ditto_currentpage">1</span><a class="ditto_page" href="http://stg.kanagawa-soka.jp/news/?paginate_start=6">2</a> <a href="http://stg.kanagawa-soka.jp/news/?paginate_start=6" class="ditto_next_link">次へ &gt;</a></p>
+
+
+```
+*/
+
+/*
+#styleguide
+
+accent_block
+```
+<div class="accent_block">
+	<ul>
+		<li>accent_block</li>
+		<li>accent_block</li>
+		<li>accent_block</li>
+		<li>accent_block</li>
+	</ul>
+</div>
+
+
+```
+*/

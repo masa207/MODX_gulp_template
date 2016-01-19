@@ -1,0 +1,38 @@
+@import "../_rule.scss";
+/*=== basic ===*/
+*{
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	font-family: $gothic;
+	color: $textColor;
+	line-height: 1.6em;
+}
+div {
+	font-family: $gothic;
+}
+a {
+	@extend %transition_color;
+}
+p {
+	margin-bottom: 30px;
+}
+ul {
+	padding: 0;
+}
+
+
+.w100p {
+	width: 100%;
+	height: auto;
+}
+.cover_wrapper {
+
+}
+
+.cover_secondPage {
+	text-align: center;
+}
